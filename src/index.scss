@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
+
+body {
+   background: #212121; 
+}
+
+.heading {
+    margin: auto;
+    width: 75%;
+    padding: 30px;
+    text-align: center;
+
+    h1, h2, h3 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 900;
+        //color: #ecf0f1;
+        color: white;
+    	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+    }
+
+    p {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        color: #ecf0f1;
+    }
+}
+
+
+.formular {
+    margin: auto;
+    width: 75%;
+    padding: 30px;
+
+    h1, h2, h3 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 900;
+        //color: #ecf0f1;
+        color: white;
+    	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+    }
+
+    p, label {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        color: #ecf0f1;
+    }
+}
