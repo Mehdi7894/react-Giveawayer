@@ -5,6 +5,7 @@
   "main": "''",
   "scripts": {
     "build": "webpack --config webpack.production.config.js --progress --profile --colors",
+    "dev-deploy": "webpack --config webpack.production.config.js --progress --profile --colors && firebase deploy",
     "start": "webpack-dev-server --progress --profile --colors --hot",
     "lint": "eslint --ext js --ext jsx src || exit 0"
   },
@@ -17,10 +18,13 @@
   "homepage": "https://github.com/alicoding/react-webpack-babel#readme",
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.3",
+    "isomorphic-fetch": "^2.2.1",
+    "material-ui": "^0.16.4",
     "node-sass": "^3.10.1",
     "react": "15.3.2",
     "react-dom": "15.3.2",
     "sass-loader": "^4.0.2",
+    "sha1": "^1.1.1",
     "superagent": "^2.3.0",
     "superagent-no-cache": "^0.1.0",
     "superagent-prefix": "0.0.2"
