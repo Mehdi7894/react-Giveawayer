@@ -9,11 +9,11 @@ export default class GiveawayList extends React.Component {
     constructor(props) {
         super(props)
         this.props = props
-        console.log(props)
+        //console.log(props)
     }
 
     copyToClipboard = (e) => {
-        console.log(this.props.lists[e])
+        //console.log(this.props.lists[e])
     }
 
     render() {
@@ -32,9 +32,10 @@ export default class GiveawayList extends React.Component {
             <div className={styles.heading}>
               {this.props.lists.map((obj, i) => {
                 return (
-                  <div>
-                    <Card>
+                  <div key={i}>
+                    <Card key={i}>
                       <CardHeader
+                        key={i}
                         title={"Giveaway #" + (this.props.lists.length - i)}
                         subtitle={"Winner is " + obj.win + " | post: " + obj.post + " | upvotes: " + obj.upvote}
                         actAsExpander={false}
